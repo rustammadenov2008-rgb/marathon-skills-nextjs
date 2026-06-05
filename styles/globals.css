@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg:         #1A1E24;
+  --bg-mid:     #22272F;
+  --bg-panel:   #2A2F38;
+  --bg-header:  #1E2530;
+  --orange:     #E8501A;
+  --orange-h:   #C43F10;
+  --green:      #3DB54A;
+  --text:       #FFFFFF;
+  --muted:      #A0A8B4;
+  --border:     #3A3F4A;
+  --error:      #FF6B5B;
+  --font-display: 'Oswald', sans-serif;
+  --font-body:    'Inter', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ── BUTTONS ── */
+.btn-orange {
+  background: var(--orange); color: #fff; border: none;
+  padding: 9px 24px; border-radius: 4px; cursor: pointer;
+  font-size: 13px; font-weight: 600; font-family: var(--font-body);
+  transition: background .2s; text-decoration: none; display: inline-block;
+}
+.btn-orange:hover { background: var(--orange-h); }
+
+.btn-outline {
+  background: transparent; color: var(--orange);
+  border: 1.5px solid var(--orange);
+  padding: 8px 24px; border-radius: 4px; cursor: pointer;
+  font-size: 13px; font-weight: 600; font-family: var(--font-body);
+  transition: background .2s; text-decoration: none; display: inline-block;
+}
+.btn-outline:hover { background: rgba(232,80,26,.15); }
+
+.btn-back {
+  background: #3A3F4A; color: #fff; border: none;
+  padding: 7px 14px; border-radius: 4px; cursor: pointer;
+  font-size: 13px; font-family: var(--font-body);
+  transition: background .2s; text-decoration: none; display: inline-block;
+}
+.btn-back:hover { background: #4A5060; }
+
+/* ── INPUTS ── */
+input[type=text], input[type=email], input[type=password],
+input[type=number], input[type=date], select, textarea {
+  background: var(--bg-panel);
+  color: #fff; border: 1px solid var(--border);
+  border-radius: 4px; padding: 8px 10px;
+  font-size: 13px; font-family: var(--font-body);
+  width: 100%; outline: none; transition: border-color .2s;
+}
+input:focus, select:focus { border-color: var(--orange); }
+select { cursor: pointer; }
+select.white { background: #fff; color: #000; }
+select.white option { background: #fff; color: #000; }
+
+/* white date input */
+input[type=date].white,
+input.white-date { background: #fff !important; color: #000 !important; }
+
+/* ── DIVIDER ── */
+.divider       { height: 1px; background: var(--border);  margin: 20px 0; }
+.divider-orange{ height: 2px; background: var(--orange);   margin: 8px 0 18px; }
+
+/* ── TABLE ── */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  background: var(--bg-panel); color: var(--muted);
+  font-weight: 700; font-size: 11px;
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--border);
+}
+td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: #fff; }
+tr:nth-child(even) td { background: #262B33; }
+tr:hover td { background: #333A45; }
+
+/* ── FORM ── */
+.field-group {
+  display: grid; grid-template-columns: 150px 1fr;
+  align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.field-label { font-size: 12px; color: var(--muted); text-align: right; }
+
+.form-btns { display: flex; justify-content: center; gap: 14px; margin-top: 24px; }
+
+.error-msg { color: var(--error); font-size: 12px; text-align: center; margin-bottom: 10px; }
+.page-title {
+  font-size: 22px; font-weight: 600; text-align: center; margin-bottom: 8px;
+}
+.page-subtitle { font-size: 12px; color: var(--muted); text-align: center; margin-bottom: 16px; }
+
+.scroll-content { padding: 28px 40px; max-width: 800px; margin: 0 auto; }
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-size: 11px; font-weight: 700;
+  color: var(--orange); letter-spacing: 2px; margin-bottom: 10px;
+}
+
+/* ── BUTTON EDIT ── */
+.btn-edit {
+  background: var(--orange); color: #fff; border: none;
+  padding: 4px 12px; border-radius: 4px; cursor: pointer;
+  font-size: 12px; font-family: var(--font-body); transition: background .2s;
+}
+.btn-edit:hover { background: var(--orange-h); }
