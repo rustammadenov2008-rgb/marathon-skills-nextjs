@@ -143,7 +143,7 @@ export default function Layout({
           padding: 10px 24px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: space-between;
           position: relative;
           flex-shrink: 0;
         }
@@ -161,13 +161,10 @@ export default function Layout({
           color: var(--orange);
         }
         .login-corner {
-          position: absolute;
-          right: 24px;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 12px !important;
+         font-size: 12px !important;
           padding: 7px 16px !important;
           white-space: nowrap;
+          flex-shrink: 0;
         }
 
         @media (max-width: 640px) {
