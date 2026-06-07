@@ -163,8 +163,11 @@ export default function Layout({
         .login-corner {
           position: absolute;
           right: 24px;
+          top: 50%;
+          transform: translateY(-50%);
           font-size: 12px !important;
-          padding: 7px 14px !important;
+          padding: 7px 16px !important;
+          white-space: nowrap;
         }
 
         @media (max-width: 640px) {
