@@ -143,7 +143,7 @@ export default function Layout({
           padding: 10px 24px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: space-between;
           position: relative;
           flex-shrink: 0;
         }
