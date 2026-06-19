@@ -164,6 +164,7 @@ function HomePage() {
           .orange-line  { margin:20px 16px; }
         }
       `}</style>
+      <ChatWidget />
     </Layout>
   );
 }
