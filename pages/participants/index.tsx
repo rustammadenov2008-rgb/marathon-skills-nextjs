@@ -1,7 +1,9 @@
+import ExportImport from '@/components/ExportImport';
 import Layout from '@/components/Layout';
 import { withAuth } from '@/components/withAuth';
 import { Runner } from '@/lib/supabase';
 import { useEffect, useState } from 'react';
+<ExportImport onImportDone={load} />
 
 function ParticipantsPage() {
   const [runners, setRunners] = useState<Runner[]>([]);
