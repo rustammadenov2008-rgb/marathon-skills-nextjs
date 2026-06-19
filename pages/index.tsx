@@ -1,3 +1,4 @@
+import ChatWidget from '@/components/ChatWidget';
 import Layout from '@/components/Layout';
 import { withAuth } from '@/components/withAuth';
 import Link from 'next/link';
