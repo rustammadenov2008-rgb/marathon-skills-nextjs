@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "crons": [
+    {
+      "path": "/api/cron-stats",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}
